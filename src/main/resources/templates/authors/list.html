@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Books</title>
+</head>
+<body>
+<table>
+		<tr>
+			<th>ID</th>
+			<th>Author</th>
+		</tr>
+		<tr th:each="author : ${authors}">
+			<td th:text="${author.id}">1</td>
+			<td th:text="${author.firstName}+' '+${author.lastName}">MusuMusu</td>
+		</tr>
+	</table>
+</body>
+</html>
